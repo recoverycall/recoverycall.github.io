@@ -2,7 +2,7 @@
 <html>
 <title>The Recovery Call</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
@@ -34,8 +34,10 @@
     background-size: cover;
   }
 
-  .img {
-    max-width: 100%;
+  .bgimg4 {
+    min-height: 40%;
+    background-position: center;
+    background-size: cover;
   }
 
   .bgimg {
@@ -49,6 +51,15 @@
   .bgimg3 {
     background-image: url("../images/places/frontdesk.png")
   }
+
+  .bgimg4 {
+    background-image: url("../images/logo/elevatorBanner.png")
+  }
+
+  .scale-image {
+    max-width: 100%;
+    height: auto
+  }
 </style>
 
 <body>
@@ -60,7 +71,6 @@
           <h2>To Stay ... <h2>
     </div>
   </div>
-
   <!-- Navbar -->
   <div class="w3-bottom w3-hide-small">
     <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
@@ -88,17 +98,20 @@
   </div>
 
   <!-- Background photo Two - Scroll to Staff -->
-  <header class="w3-display-container w3-wide bgimg w3-grayscale-min">
-    <div class="w3-display-middle w3-text-white w3-center">
+  <div class="scale-image w3-gray w3-grayscale-min w3-center">
+    <div class="w3-row">
+      <div class="scale-image">
+        <img src="../images/logo/bell-logo.jpg" style="width:100%;">
+      </div>
     </div>
-  </header>
+  </div>
 
   <!-- staff information  -->
   <div class="w3-container w3-padding-64 w3-gray w3-grayscale-min w3-center" id="staff">
     <div class="w3-content">
       <h1 class="w3-text-grey"><b>Meet the staff</b></h1>
       <div class="w3-row">
-        <div class="w3-half brice">
+        <div class="w3-half">
           <img src="../images/peeps/bwrice.png" style="width:100%; margin:32px 0">
           <p>Social Media Links and what not</p>
         </div>
@@ -115,7 +128,7 @@
           <p>Social Media Links and what not</p>
         </div>
         <div class="w3-half">
-          <img src="../images/peeps/gpiazza.png" style="width:100%;margin:32px 0"> 
+          <img src="../images/peeps/gpiazza.png" style="width:100%;margin:32px 0">
           <p>Social Media Links and what not</p>
         </div>
         <div class="w3-half">
@@ -134,11 +147,45 @@
     </div>
   </div>
 
-  <!-- Background photo Three - Scroll to Contact -->
-  <header class="w3-display-container w3-wide bgimg3 w3-grayscale-min">
-    <div class="w3-display-middle w3-text-white w3-center">
+  <!-- Background banner four - Scroll to Contact -->
+  <div class="scale-image w3-gray w3-grayscale-min w3-center">
+    <div class="w3-row">
+      <div class="scale-image">
+        <img src="../images/logo/elevatorBanner.png" style="width:100%; margin:32px 0">
+      </div>
     </div>
-  </header>
+  </div>
+
+  <!-- behind the scenes photos  -->
+  <div class="w3-container w3-padding-64 w3-gray w3-grayscale-min w3-center">
+    <div class="w3-content">
+      <h1 class="w3-text-grey"><b>Behind the scenes</b></h1>
+      <div class="w3-row">
+        <div class="w3-half">
+          <img src="../images/behind/behindTheScenes1.png" style="width:100%; margin:32px 0">
+        </div>
+        <div class="w3-half">
+          <img src="../images/behind/behindTheScenes2.png" style="width:100%; margin:32px 0">
+        </div>
+        <div class="w3-half">
+          <img src="../images/behind/behindTheScenes3.png" style="width:100%; margin:32px 0">
+        </div>
+        <div class="w3-half">
+          <img src="../images/behind/behindTheScenes4.png" style="width:100%; margin:32px 0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Background photo Three - Scroll to Contact -->
+  <div class="scale-image w3-gray w3-grayscale-min w3-center">
+    <div class="w3-row">
+      <div class="scale-image">
+        <img src="../images/places/frontdesk.png" style="width:100%;">
+      </div>
+    </div>
+  </div>
 
   <!-- Contact section -->
   <div class="w3-container w3-padding-64 w3-black w3-center w3-wide" id="contact">
@@ -154,6 +201,7 @@
   <footer class="w3-center w3-black w3-padding-16">
     <p>Powered by<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
         class="w3-hover-text-green">w3.css</a></p>
+        <p>...and tacked together by Jarryd Stamatelos</p>
   </footer>
   <div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
