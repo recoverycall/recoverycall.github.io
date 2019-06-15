@@ -4,24 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 <style>
   body,
-  h1,
-  h2 {
-    font-family: "Raleway", sans-serif
+  h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
   }
-
+  h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 80px
+  }
   body,
   html {
     height: 100%
   }
+
+  .button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    }
 
   p {
     line-height: 2
   }
 
   .bgimg,
+  .bgimg1,
   .bgimg2,
   .bgimg3 {
     min-height: 100%;
@@ -29,69 +38,65 @@
     background-size: cover;
   }
 
-  .bgimg4 {
-    min-height: 40%;
-    background-position: center;
-    background-size: cover;
+  .bgimg1 {
+    background-image: url("../images/behind/behindTheScenes7.jpg")
   }
 
   .bgimg2 {
     background-image: url("../images/places/lonelyroad.jpg")
   }
 
-  .bgimg4 {
-    background-image: url("../images/logo/elevatorBanner.jpg")
+  .bgimg3 {
+    background-image: url("../images/behind/behindTheScenes6.jpg")
   }
 
   .scale-image {
     max-width: 100%;
     height: auto
   }
+
+  .container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+
 </style>
 
 <body>
 
-  <!-- Background photo One - Top -->
+  <!-- Background photo One - Trailer Button -->
   <div class="w3-display-container bgimg2">
     <div class="w3-display-middle w3-text-white w3-center">
-      <h1 class="w3-jumbo">The Recovery Call</h1>
+      <h2>The Recovery Call</h2>
+      <a href="./preview.html" button class="btn w3-mobile w3-button"><h1>WATCH OUR TRAILER</h1></button></a>
     </div>
   </div>
+  <!-- Background photo Two - Staff button -->
 
-  <!-- Navigate to preview page - no link currently -->
-  <div class="w3-container w3-padding-64 w3-black w3-grayscale-min">
-      <div class="w3-content">
-        <a href="./preview.html" style="width:100%" class="w3-bar-item w3-gray w3-button w3-xxlarge w3-mobile">WATCH OUR TRAILER</a>
+  <div class="w3-display-container bgimg1">
+      <div class="w3-display-middle w3-text-white w3-center">
+        <a href="./staff.html" button class="btn w3-mobile w3-button"><h1>OUR TEAM</h1></button></a>
       </div>
     </div>
 
-  <!-- Elevator Banner -->
-  <div class="scale-image w3-black w3-grayscale-min w3-center">
-    <div class="w3-row">
-      <div class="scale-image">
-        <img src="../images/logo/elevatorBanner.jpg" style="width:100%; margin:32px 0">
-      </div>
-    </div>
-  </div>
-
-  <!-- Navigate to staff page button -->
-  <div class="w3-container w3-padding-64 w3-black w3-grayscale-min">
-      <div class="w3-content">
-        <a href="./staff.html" style="width:100%" class="w3-bar-item w3-gray w3-button w3-xxlarge w3-mobile">OUR TEAM</a>
-      </div>
-    </div>
-    
-  <!-- Place holder for new image -->
-  <div class="w3-container w3-padding-64 w3-black w3-grayscale-min">
-      <div class="w3-content">
-        <button style="width:100%" class="w3-bar-item w3-gray w3-button w3-xxlarge w3-mobile">PLACE HOLDER FOR DESK IMAGE</a>
-      </div>
-    </div>
-
-  <!-- Navigate to Behind the scenes button -->
-  <div class="w3-container w3-padding-64 w3-black w3-grayscale-min">
-      <div class="w3-content">
-        <a href="./behindTheScenes.html" style="width:100%" class="w3-bar-item w3-gray w3-button w3-xxlarge w3-mobile">BEHIND THE SCENES</a>
+  <div class="w3-display-container bgimg3">
+      <div class="w3-display-middle w3-text-white w3-center">
+        <a href="./behindTheScenes.html" button class="btn w3-mobile w3-button"><h1>BEHIND THE SCENES</h1></button></a>
       </div>
     </div>
 
