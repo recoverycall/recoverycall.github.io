@@ -8,12 +8,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 <style>
   body,
-  h1,
+  h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 60px;
+  }
+
   h2 {
-    font-family: "Raleway", sans-serif
+    font-family: 'Open Sans Condensed', sans-serif;
   }
 
   h1,
@@ -40,6 +44,28 @@
   .bgimg {
     background-image: url("./images/places/hotelFrontDark.jpg")
   }
+
+  .container .btn .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 10px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
 </style>
 
 <body>
@@ -47,11 +73,12 @@
   <!-- Header / Home-->
   <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
     <div class="w3-display-middle w3-text-white w3-center">
-      <h1 class="w3-jumbo"><b>THE ORION HOTEL</b></h1>
+      <h1><b>THE ORION HOTEL</b></h1>
+      <a href="./pages/landing.html" button class="btn w3-mobile w3-button">
+        <h2>BOOK YOUR STAY</h2></button>
+      </a>
     </div>
   </header>
-  <a href="./pages/landing.html" style="width:100%" class="w3-bar-item w3-gray w3-button w3-xxlarge w3-mobile">BOOK YOUR STAY</a>
-
 </body>
 
 </html>
