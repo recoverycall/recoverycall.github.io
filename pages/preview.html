@@ -39,14 +39,22 @@
     .bgimg {
         background-image: url("../images/places/hotelFrontDark.jpg")
     }
+
+    .resp-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
 </style>
 
 <body>
 
     <div class="w3-display-container bgimg">
         <div class="w3-display-middle w3-text-white w3-center">
-            <iframe src="https://player.vimeo.com/video/352772328" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <p><a href="https://vimeo.com/352772328">The Recovery Call | Official Trailer | 2019</a> from <a href="https://vimeo.com/therecoverycallmovie">The Recovery Call</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            <div class="resp-container">
+                <iframe class="resp-iframe" src="https://player.vimeo.com/video/352772328" gesture="media"
+                    allow="encrypted-media" allowfullscreen></iframe>
+            </div>
             <a href="./landing.html" button class="btn w3-mobile w3-button">
                 <h1>Go back</h1></button>
             </a>
